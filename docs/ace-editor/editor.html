@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor</title>
+  <style type="text/css" media="screen">
+    #editor {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+  </style>
+</head>
+<body>
+
+<pre id="editor"></pre>
+
+<script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+    var editor = ace.edit("editor");
+    editor.setTheme('ace/theme/eclipse');
+    editor.session.setMode('ace/mode/c_cpp');
+    editor.setFontSize("20px");
+
+    function changeTheme(theme){
+      var editor = ace.edit("editor");
+      editor.setTheme('ace/theme/' + theme);
+    }
+
+    function changeLanguage(language){
+      var editor = ace.edit("editor");
+      switch (language){
+        case 'Ada':             editor.session.setMode('ace/mode/ada'); break;
+        case 'Bash':             editor.session.setMode('ace/mode/sh'); break;
+        case 'C':               editor.session.setMode('ace/mode/c_cpp'); break;
+        case 'C++':             editor.session.setMode('ace/mode/c_cpp'); break;
+        case 'C#':              editor.session.setMode('ace/mode/csharp'); break;
+        case 'Go':              editor.session.setMode('ace/mode/golang'); break;
+        case 'Haskell':         editor.session.setMode('ace/mode/haskell'); break;
+        case 'Java':            editor.session.setMode('ace/mode/java'); break;
+        case 'JavaScript':      editor.session.setMode('ace/mode/javascript'); break;
+        case 'Julia':           editor.session.setMode('ace/mode/julia'); break;
+        case 'Kotlin':          editor.session.setMode('ace/mode/kotlin'); break;
+        case 'Perl':            editor.session.setMode('ace/mode/perl'); break;
+        case 'PHP':             editor.session.setMode('ace/mode/php/php'); break;
+        case 'Python':          editor.session.setMode('ace/mode/python'); break;
+        case 'Python3':         editor.session.setMode('ace/mode/python'); break;
+        case 'Ruby':            editor.session.setMode('ace/mode/ruby'); break;
+        case 'Rust':            editor.session.setMode('ace/mode/rust'); break;
+      }
+    }
+
+    function getCode(){
+      var editor = ace.edit("editor");
+      return editor.getValue();
+    }
+
+</script>
+
+</body>
+</html>

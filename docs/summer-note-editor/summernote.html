@@ -27,8 +27,14 @@
           ['height', ['height']]
         ]
       });
-    $('#summernote').summernote('fullscreen.toggle');
-    $('.note-group-select-from-files').css('display', 'none');
+    $('.note-group-select-from-files').css('display', 'none');    	
+    function toggleFullscreen(){
+	    $('#summernote').summernote('fullscreen.toggle');
+    }
+    toggleFullscreen();
+    function disable(){
+    	$('#summernote').summernote('disable');
+    }
   </script>
 </body>
 </html>

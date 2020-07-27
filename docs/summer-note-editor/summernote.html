@@ -17,7 +17,6 @@
         tabsize: 4,
         height: 400,
         toolbar: [
-          // [groupName, [list of button]]
           ['style', ['bold', 'italic', 'underline', 'clear']],
           ['font', ['strikethrough', 'superscript', 'subscript']],
           ['fontsize', ['fontsize', 'fontname']],
@@ -34,6 +33,10 @@
     toggleFullscreen();
     function disable(){
     	$('#summernote').summernote('disable');
+    }
+    function getMarkupString(){
+    	var markupStr = $('#summernote').summernote('code');
+    	return markupStr;
     }
   </script>
 </body>

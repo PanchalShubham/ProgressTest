@@ -29,9 +29,8 @@
     <p>
       <ul>
         <li>Are you struggling to maintain your student's assessment record?</li>
-        <li>Are you looking for an offline platform for autograded coding assessments?</li>
-        <li>Do you want to conduct offline assessments with high security?</li>
-        <li>Do you want to make your assessments digitalized?</li>
+        <li>Are you looking for a way to digitalize your assessments?</li>
+        <li>Are you looking for a way to conduct personal coding contests?</li>
       </ul>
       If you said <em><strong>YES</strong></em> to any of these questions then you are at the right place.<br>
       <em>Progress Test</em> is a simple desktop application built for instructors!<br>
@@ -39,19 +38,15 @@
     <p style="margin-top: 50px;">
       <h3 style="border-bottom: 2px solid black;">Features of Progress Test</h3>
       <ul>
-        <li>No registration required</li>
-        <li>Available completely offline</li>
-        <li>Able to conduct offline assessments with high security</li>
-        <li>Digitalize the assessment conduction process</li>
+        <li>No registration required!</li>
+        <li>Digitalize the assessments</li>
         <li>Supports variety of generic questions e.g. short-answer, long-aswer, multiple-choice, code, etc</li>
-        <li>Supports rich text editing</li>
-        <li>Respects time-limit and number-of-attempts restrictions</li>
-        <li>Blocks user from switching tab and support for webcam recording</li>
-        <li>Supports rich code-editing environment with syntax highlighting for multiple programming languages</li>
-        <li>Supports automated testing of user's code against pre-defined test casesin language of their choice</li>
-        <li>Support for image attachments for user's reference</li>
+        <li>Time-limit and number-of-attempts constraints</li>
+        <li>Rich text-editor and rich code-editor with syntax highlighting for multiple programming languages</li>
+        <li>Supports automated testing of user's code against pre-defined test cases in language of their choice</li>
         <li>End-to-end encryption/decryption process</li>
         <li>Shuffled questions with shuffled options</li>
+        <li>Works fine with low speed internet connection</li>
         <li>and many more...</li>
       </ul>
     </p>
@@ -61,85 +56,100 @@
       	<li>Can be used as a primary means of examination process in colleges or universities</li>
       	<li>Can be used to conduct assessments, assignments, homeworks, etc</li>
       	<li>Can be used as an autograder for programming assessments</li>
-      	<li>Can be used to conduct offline autograded coding contents</li>
       	<li>and many more such applications</li>
       </ul>
     </p>    
-    <p style="margin-top: 50px;">
-      <h3 style="border-bottom: 2px solid black;">Workflow</h3>
-      <ul>
-        <li>Instructor has to create an assessment and provide a list of student-IDs.</li>
-        <li>Based on list of student-IDs recieved, application will generate a unique zip file for each student along with one readme.txt(containing codes) and editableForInstructor.zip where each file is encrypted</li>
-        <li>Instructor can then share the zip files with students along with the student-code to unlock the assessment.</li>
-        <li>In case if instructor has to make some changes he/she can use editableForInstructor.zip and use edit-code to unlock the assessment.</li>
-        <li>Each student can use his/her zip file and can make attempts.</li>
-        <li>On successful attempt a *.dat (encrypted) file will be generated which students can submit to their instructor for review. In case if instructor has opted for webcam then a webcam-recording file will also be generated which can be shared with instructor.</li>
-        <li>Note that each submission will have its own stamp of who and when made this submission.</li>
-        <li>Instructor can use the review-code to review submissions.</li>
-      </ul>
-    </p>
-    <p style="margin-top: 50px;">
-      <h3 style="border-bottom: 2px solid black;">Dependency</h3>
-      <ul>
-        <li>Java Runtime Enviroment (JRE) 11 or higher.</li>
-        <li>ffmpeg for webcam-recording</li>
-      </ul>
-      Recommendations:<br>
-      JRE: <a href="https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html">Amazon-corretto-11</a><br>
-      OS: Linux<br>
-    </p>
+  	<p style="margin-top: 50px;">
+  		<h3 style="border-bottom: 2px solid black;">Dependency</h3>
+  		You need to first install JDK(Java Development Kit) or JRE(Java Runtime Environment) version 8 in order to run this application<br>
+  		You can download the JDK8 from <a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">here</a> according to your operating system<br>
+  		You can verify your installation with following command<br>
+  		<strong><em>java -version</em></strong><br>
+  		The following image shows the output for Ubutnu-16.04<br>
+  		<img src="images/reference.png">
+  	</p>
     <p style="margin-top: 50px;">
       <h3 style="border-bottom: 2px solid black;">Download and Installation</h3>
-      Please contact panchalprogrammingacademy@gmail.com or shubhampanchal9773@gmail.com
-    </p>
-    <p style="margin-top: 50px;">
-      <h3 style="border-bottom: 2px solid black;">Future updates</h3>
-      <ul>
-        <li>Add watermark to webcam-recordings</li>
-        <li>Enhance security against plagiarism</li>
-      </ul>
+      <a href="progress-test-v1.0/ProgressTest.zip" download>Download ProgressTest-v1.0 JAR</a><br>
+      Once you have installed JDK8 and configured the path variables then you can run the application using the command: <em>java -jar ProgressTest.jar</em><br>
+      <strong><em>This download is available for trial and is slow because it connects to a trial cloud database</em></strong><br>
+      <strong><em>Please contact shubhampanchal9773@gmail.com or panchalprogrammingacademy@gmail.com to get a release for your private configurations</em></strong><br>
     </p>
     <p style="margin-top: 50px;">
       <h3 style="border-bottom: 2px solid black;">Application screenshots</h3>
       <ul>
         <li>
-          <h6>Support for single-correct, multiple-correct, paragraph, short-answer and programming questions. Supports restricted number of attempts, time-limit and webcam recording</h6>
-          <img src="images/features.png" style="border: 2px solid black;">
+          <h6>Available features (Attempt, Create, Edit, Delete or Review assessments)</h6>
+          <img src="images/demo0.png" style="border: 2px solid black;">
         </li>
         <br>
         <li>
-          <h6>Support for blocking full-screen assessment window with not-attempted, review and done indicator along with count-down for students</h6>
-          <img src="images/radioDemo.png" style="border: 2px solid black;">
+          <h6>Time-limit(in minutes) and max. number of attempts constraints</h6>
+          <img src="images/demo1.png" style="border: 2px solid black;">
         </li>
         <br>
         <li>
-          <h6>Ease of navigation (navigate to previous or next using buttons or to a specific question using sidebar)</h6>
-          <img src="images/checkBoxDemo.png" style="border: 2px solid black;">
+          <h6>Rich text-editor with copy/paste support from websites, docs, word, etc.</h6>
+          (demo problem copied from LeetCode)
+          <img src="images/demo2.png" style="border: 2px solid black;">
         </li>
         <br>
         <li>
-          <h6>Rich text editing</h6>
-          <img src="images/paragraphDemo.png" style="border: 2px solid black;">
+          <h6>Ease of programming-problem creation, import test-cases from system</h6>
+          <img src="images/demo3.png" style="border: 2px solid black;">
         </li>
         <br>
         <li>
-          <h6>Rich code-editor with syntax highlighting for different languages with dark and light themes</h6>
-          <img src="images/programmingDemo1.png" style="border: 2px solid black;">
+          <h6>You decide who can attempt</h6>
+          <img src="images/demo4.png" style="border: 2px solid black;">
         </li>
         <br>
         <li>
-          <h6>Automated testing for user's code against pre-defined test cases maintaing the best and the latest score</h6>
-          <img src="images/programmingDemo2.png" style="border: 2px solid black;">
+          <h6>Save information locally on your machine</h6>
+          <img src="images/demo5.png" style="border: 2px solid black;">
         </li>
         <br>
         <li>
-          <h6>Built-in attachment viewer for displaying image attachments to students</h6>
-          <img src="images/attachmentViewerDemo.png" style="border: 2px solid black;">
+          <h6>End-to-end encryption/decryption</h6>
+          <img src="images/demo6.png" style="border: 2px solid black;">
         </li>
         <br>
         <li>
-          <h6>On screen notifications for students</h6>
-          <img src="images/confirmationDemo.png" style="border: 2px solid black;">
+          <h6>Information about number of attempts a student is left with</h6>
+          <img src="images/demo7.png" style="border: 2px solid black;">
+        </li>
+        <br>
+        <li>
+          <h6>A full-screen blocking window (disable switching tabs) with convenient features (time-limit, question-status, number-of-attempts-left, student-id, ease-of-navigation)<br>
+          Use refresh button to refresh assessment - for slow internet connections.<br>
+          Don't worry, your answers will be saved</h6>
+          <img src="images/demo8.png" style="border: 2px solid black;">
+        </li>
+        <br>
+        <li>
+          <h6>Rich editor for students to write answers in more readable format with highlighting effects.<br>
+          And yeah! Of course, students don't have a copy/paste option</h6>
+          <img src="images/demo9.png" style="border: 2px solid black;">
+        </li>
+        <br>
+        <li>
+          <h6>Rich code-editor with syntax highlighting for multiple programming languages with many interesting themes with support for custom-testing</h6>
+          <img src="images/demo10.png" style="border: 2px solid black;">
+        </li>
+        <br>
+        <li>
+          <h6>List of past submission (rollback available) with automatic testing against pre-defined test-cases.</h6>
+          <img src="images/demo11.png" style="border: 2px solid black;">
+        </li>
+        <br>
+        <li>
+          <h6>Safe end-assessment feature (no more argument of closed window by mistake and couldn't attempt my assessment properly)</h6>
+          <img src="images/demo12.png" style="border: 2px solid black;">
+        </li>
+        <br>
+        <li>
+          <h6>Review report of your students at your convenience</h6>
+          <img src="images/demo13.png" style="border: 2px solid black;">
         </li>
       </ul>
     </p>
